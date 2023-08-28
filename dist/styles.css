@@ -1,0 +1,119 @@
+body,
+html {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+
+  background-color: #255363;
+  color: #ffffff;
+}
+
+.conteudo {
+  padding: 1%;
+
+  gap: 10px;
+
+  display: grid;
+  place-items: center;
+}
+
+.grid-termo {
+  display: grid;
+  grid-template-rows: repeat(5, 65px);
+  gap: 7px;
+
+  margin-bottom: 2%;
+}
+
+.grid-termo>.linha {
+  display: grid;
+  grid-template-columns: repeat(5, 65px);
+  gap: 7px;
+}
+
+.grid-termo>.linha>.coluna {
+  display: grid;
+  place-items: center;
+  height: 100%;
+
+  background-color: #82d8d8;
+  color: #2e2e2e;
+  border-radius: 10px;
+
+  font-size: 25px;
+  font-weight: 900;
+}
+
+
+.grid-teclado {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  gap: 2.2px;
+}
+
+button {
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  background-color: #82d8d8;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+button:hover {
+  background-color: rgb(43, 200, 206);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.grid-teclado>.btn-enter {
+  grid-column: 2 span;
+  background-color: #07ada0;
+  color:white;
+}
+
+.btn-reiniciar:hover{
+  color: #ffffff;
+  background-color: #0a776e;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.btn-reiniciar {
+  grid-column: 3 span;
+  margin-top: 3px;
+  background-color: #07ada0;
+  color:white;
+}
+
+#divMensagemFinal{
+  gap: 10px;
+    display: grid;
+    place-items: center;
+}
+
+.letra-correta{
+  background-color: rgb(4, 148, 4) !important;
+}
+
+.letra-posicao-incorreta{
+  background-color: rgb(150, 123, 5) !important;
+}
+
+.letra-nao-existente{
+  background-color: rgb(99, 95, 95) !important;
+}
+
+.display-none{
+  display: none !important;
+}
+
+.cor-cinza{
+  background-color: #e3d4d4 !important;
+}
